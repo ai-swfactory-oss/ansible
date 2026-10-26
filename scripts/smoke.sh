@@ -105,8 +105,12 @@ cat >lintme/play.yml <<'EOF'
   tasks:
     - shell: echo hi
 EOF
+# The fixture's findings are expected. Under GitHub Actions ansible-lint also
+# writes each finding as a workflow error annotation, which makes a passing
+# smoke look failing: report in plain pep8 lines and hide the Actions
+# environment from this one run, so nothing is annotated.
 set +e
-(cd lintme && "$(bin ansible-lint)" --offline --nocolor play.yml) >lint.txt 2>&1
+(cd lintme && env -u GITHUB_ACTIONS -u GITHUB_WORKFLOW "$(bin ansible-lint)" --offline --nocolor --format pep8 play.yml) >lint.txt 2>&1
 rc=$?
 set -e
 cat lint.txt
