@@ -1,0 +1,29 @@
+ansible-core (https://github.com/ansible/ansible) and ansible-lint
+(https://github.com/ansible/ansible-lint)
+Copyright Red Hat, Inc. and the Ansible contributors.
+
+ansible-core and ansible-lint, and yamllint which ansible-lint uses, are free
+software: you can redistribute them and/or modify them under the terms of the
+GNU General Public License as published by the Free Software Foundation,
+either version 3 of the License, or (at your option) any later version (see
+LICENSE and LICENSES/). They are distributed WITHOUT ANY WARRANTY.
+
+Bundled with them: CPython (PSF-2.0) from python-build-standalone, including
+the libraries CPython links (OpenSSL Apache-2.0, libffi MIT, SQLite public
+domain, zlib, and others; their licence texts are in
+LICENSES/python-build-standalone/), and every Python distribution the locks
+list: among them jinja2 and markupsafe (BSD-3-Clause), cryptography (Apache-2.0
+OR BSD-3-Clause, with a statically linked OpenSSL), PyYAML, black, jsonschema
+and ruamel.yaml (MIT), and pathspec (MPL-2.0, whose Python source files are
+in python/lib/ as installed; its sdist is attached to the release with the GPL
+sources). Each distribution's licence texts are in LICENSES/<distribution>/.
+All are GPL-3.0-compatible.
+
+This npm package is published by ai-swfactory-oss
+(https://github.com/ai-swfactory-oss/ansible), which is not affiliated with
+Red Hat, the Ansible project or the Python Software Foundation. "Ansible" is a
+trademark of Red Hat, Inc. Nothing is modified: the interpreter is the
+upstream build and every distribution is installed from the wheel PyPI
+publishes. No collections are bundled, and no ansible runtime directory is set:
+the caller passes ANSIBLE_HOME. The package is distributed under
+GPL-3.0-or-later.

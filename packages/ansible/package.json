@@ -1,0 +1,28 @@
+{
+  "name": "@ai-swfactory-oss/ansible",
+  "description": "ansible-core and ansible-lint on a bundled CPython for your platform: hash-locked, no download at install time, no install scripts, isolated from the host Python",
+  "keywords": [
+    "ansible",
+    "ansible-lint",
+    "ansible-playbook"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "ansible-galaxy": "bin/ansible-galaxy.js",
+    "ansible-inventory": "bin/ansible-inventory.js",
+    "ansible-lint": "bin/ansible-lint.js",
+    "ansible-playbook": "bin/ansible-playbook.js"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "index.d.ts",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
