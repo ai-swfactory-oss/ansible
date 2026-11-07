@@ -1,12 +1,12 @@
 {
   "package": "ansible",
-  "version": "2.21.5",
+  "version": "2.22.0",
   "repack": 0,
   "license": "GPL-3.0-or-later",
   "license_dist": "ansible_core",
   "requirements": [
-    "ansible-core==2.21.5",
-    "ansible-lint==26.10.1",
+    "ansible-core==2.22.0",
+    "ansible-lint==26.11.0",
     "cryptography==48.0.1"
   ],
   "gpl_sources": [
